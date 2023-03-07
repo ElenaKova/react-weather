@@ -1,8 +1,7 @@
-
 import "./App.css";
 // import Loader from "react-loader-spinner";
 
-import SearchEngine from "./Search";
+import SearchEngine from "./Weather";
 // import Current from "./CurrentMain";
 
 export default function App() {
@@ -10,9 +9,6 @@ export default function App() {
     <div className="App">
       <div className="block">
         <SearchEngine defaultCity="Rome" />
-        {/* <Current /> */}
-        {/* <ShowForecast /> */}
-         
       </div>
       <footer>
           This project was coded by Elena Kovalenko and is{" "}

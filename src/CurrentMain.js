@@ -19,7 +19,7 @@ export default function CurrentInfo(props) {
                 <WeatherIcon code={props.data.icon} />
               </span >
               <span className="temperature" id="temperature">
-                <WeatherTemp celsius={ props.data.temperature} />
+                <WeatherTemp celsius={props.data.temperature} />
               </span>
               <span className="units">
                 <a href="/" id="celsius" className="active">
