@@ -41,10 +41,10 @@ export default function CurrentInfo(props) {
               {props.data.description}
             </div>
           </div>
-          <div className="item col-xl-4 col-md-3 d-flex mb-2">
-            <div className="my-0 precipitation">
+          <div className="item col-xl-4 col-md-3 d-flex mb-2 justify-content-end">
+            {/* <div className="my-0 precipitation">
               Feels like: <span id="feels">{props.data.feels_like}</span>℃
-            </div>
+            </div> */}
             <div className="my-0 humidity">
               Humidity: <span id="humidity">{props.data.humidity}</span>%
             </div>
