@@ -27,13 +27,13 @@ export default function BlockForecast(props) {
     }
 
     if (loader) {
-        return (
-            <div>
+        return (           
+                <section className="inner-box">
                 <div class="box-day" >
-                    <div class="container inner-box-day d-flex">
+                    <div div class = "container inner-box-day d-flex" >
                         <div class="day-of-week align-items-center ">
                             {forecast.map(function (daily, idx) {
-                                if (idx < 5) {
+                                if (idx < 7) {
                                     return (
                                         <div className="day-of-week align-items-center " key={idx}>
                                             <ShowForecast data={daily} />
@@ -44,9 +44,9 @@ export default function BlockForecast(props) {
                                 }
                             })}
                         </div>
-                    </div>
+                    </div>  
                 </div>
-            </div>
+            </section>
         );
     } else {
         searchForecast();

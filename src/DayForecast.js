@@ -31,7 +31,6 @@ export default function ShowForecast(props) {
 
 
     return (
-        <div>
             <div className="box-day" >
                 <div className="container inner-box-day text-align-center d-flex">
                     <div className="day-of-week px-2"> {day()}
@@ -45,9 +44,8 @@ export default function ShowForecast(props) {
                             minTemp()
                         } </span>
                     </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    )
+           )
 }
    

@@ -8,7 +8,7 @@ import WeatherTemp from "./WeatherTemp";
 export default function CurrentInfo(props) {
   return (
     <div className="CurrentInfo">
-      <div className="container d-flex mb-4">
+      <div className="container d-flex">
         <div className="container main p-0">
           <div
             className="item col-xl-4 col-md-6 d-flex  mb-2"

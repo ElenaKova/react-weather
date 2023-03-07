@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import BlockForecast from "./Forecast";
 import axios from "axios";
+
 import "./App.css";
 
 import CurrentInfo from "./CurrentMain";
@@ -42,10 +43,10 @@ export default function SearchEngine(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="container my-2">
+      <div className="container">
         <form className="enter-city" id="enter_city" onSubmit={handlerSubmit}>
           <div div className="col d-flex" >
-            {/* <i className="icon fa-solid fa-location-dot fa-lg"></i> */}
+            {/* <i className="icon fa-solid fa-location-dot fa-lg">icon</i> */}
             <div className="py-1 d-flex justify-content-start">
               <div className="py-1 d-flex justify-content-start">
                 <input
