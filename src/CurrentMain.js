@@ -1,7 +1,7 @@
 import React from "react";
- import FormatDate from "./FormatDate";
+import FormatDate from "./FormatDate";
 
- import WeatherIcon from "./Icons";
+import WeatherIcon from "./Icons";
 import "./App.css";
 import WeatherTemp from "./WeatherTemp";
 

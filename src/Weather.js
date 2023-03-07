@@ -43,9 +43,13 @@ export default function SearchEngine(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="container">
-        <form className="enter-city" id="enter_city" onSubmit={handlerSubmit}>
-          <div div className="col d-flex" >
+      <div div className = "container " >
+        <div form className = "enter-city "
+        id = "enter_city"
+        onSubmit = {
+          handlerSubmit
+        } >
+          <div className = "col d-flex justify-content-center" >
             {/* <i className="icon fa-solid fa-location-dot fa-lg">icon</i> */}
             <div className="py-1 d-flex justify-content-start">
               <div className="py-1 d-flex justify-content-start">
@@ -79,7 +83,7 @@ export default function SearchEngine(props) {
               </div> */}
             </div>
           </div>
-        </form>{" "}
+        </div>{" "}
         <CurrentInfo data={weatherData} />
         <BlockForecast coordinates={weatherData.coordinates} />
       </div>
