@@ -25,10 +25,10 @@ export default function CurrentInfo(props) {
                 <a href="/" id="celsius" className="active">
                   °C
                 </a>{" "}
-                |
+                {/* |
                 <a href="/" id="fahrenheit">
                   °F
-                </a>
+                </a> */}
               </span>
             </div>
           </div>

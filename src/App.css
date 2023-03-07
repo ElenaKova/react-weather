@@ -140,9 +140,9 @@ h1#city {
 }
 
 .weather-temperature .units {
-  font-size: 15px;
+  font-size: 20px;
   position: relative;
-  top: -15px;
+  top: -25px;
 }
 
 .weather-temperature a {
