@@ -49,7 +49,7 @@ export default function SearchEngine(props) {
         onSubmit = {
           handlerSubmit
         } >
-          <div className = "col d-flex justify-content-center" >
+          <div className = "col d-flex" >
             {/* <i className="icon fa-solid fa-location-dot fa-lg">icon</i> */}
             <div className="py-1 d-flex justify-content-start">
               <div className="py-1 d-flex justify-content-start">
