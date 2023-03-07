@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import "./App.css";
+// import Loader from "react-loader-spinner";
+
+import SearchEngine from "./Search";
+import Current from "./CurrentMain";
+// import ShowForecast from "./Forecast";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="block">
+        <SearchEngine defaultCity="Rome" />
+        <Current />
+        {/* <ShowForecast /> */}
+         
+      </div>
+      <footer>
+          This project was coded by Elena Kovalenko and is{" "}
+          <a
+            href = "https://github.com/ElenaKova/react-weather"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open-sourced on GitHub
+          </a>
+        </footer>
     </div>
   );
 }
-
-export default App;
