@@ -3,15 +3,14 @@ import "./App.css";
 // import Loader from "react-loader-spinner";
 
 import SearchEngine from "./Search";
-import Current from "./CurrentMain";
-// import ShowForecast from "./Forecast";
+// import Current from "./CurrentMain";
 
 export default function App() {
   return (
     <div className="App">
       <div className="block">
         <SearchEngine defaultCity="Rome" />
-        <Current />
+        {/* <Current /> */}
         {/* <ShowForecast /> */}
          
       </div>

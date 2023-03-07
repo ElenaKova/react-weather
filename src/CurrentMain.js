@@ -1,15 +1,14 @@
 import React from "react";
-
-// import Search from "./Search";
-// import SearchEngine from "./Search";
+ import FormatDate from "./FormatDate";
 import ReactAnimatedWeather from 'react-animated-weather';
-// import WeatherIcon from "./Icons";
-import "./App.css";
 
-export default function Current() {
+import "./App.css";
+import WeatherTemp from "./WeatherTemp";
+
+export default function CurrentInfo(props) {
   return (
-    <div>
-      <div className="container d-flex mx-3 mt-3 mb-4">
+    <div className="CurrentInfo">
+      <div className="container d-flex mb-4">
         <div className="container main p-0">
           <div
             className="item col-xl-4 col-md-6 d-flex  mb-2"
@@ -25,7 +24,7 @@ export default function Current() {
               />
               </span >
               <span className="temperature" id="temperature">
-                5
+                <WeatherTemp celsius={ props.data.temperature} />
               </span>
               <span className="units">
                 <a href="/" id="celsius" className="active">
@@ -39,23 +38,23 @@ export default function Current() {
             </div>
           </div>
           <div className="item col-xl-4 col-md-3 d-flex mb-2 ">
-            <h1 id="city">Kyiv</h1>
+            <h1 id="city">{props.data.city}</h1>
             <div className="my-0" id="day-time">
-              Friday: 14:00
+              <FormatDate date={props.data.date} />
             </div>
             <div className="my-0" id="description">
-              Overcast clouds
+              {props.data.description}
             </div>
           </div>
           <div className="item col-xl-4 col-md-3 d-flex mb-2">
             <div className="my-0 precipitation">
-              Feels like: <span id="feels">2</span>℃
+              Feels like: <span id="feels">{props.data.feels_like}</span>℃
             </div>
             <div className="my-0 humidity">
-              Humidity: <span id="humidity">65</span>%
+              Humidity: <span id="humidity">{props.data.humidity}</span>%
             </div>
             <div className="my-0 wind">
-              Wind: <span id="wind">3</span> km/h
+              Wind: <span id="wind">{Math.round(props.data.wind)}</span> km/h
             </div>
           </div>
         </div>
