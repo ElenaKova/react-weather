@@ -1,7 +1,7 @@
 import React from "react";
  import FormatDate from "./FormatDate";
-import ReactAnimatedWeather from 'react-animated-weather';
 
+ import WeatherIcon from "./Icons";
 import "./App.css";
 import WeatherTemp from "./WeatherTemp";
 
@@ -15,13 +15,8 @@ export default function CurrentInfo(props) {
             id="current-degree"
           >
             <div className="clearfix weather-temperature">
-              <span span className="imoji px-3" >
-                <ReactAnimatedWeather
-                icon="CLEAR_DAY"
-                color="#000"
-                size={65}
-                animate={true}
-              />
+              <span span className="emoji px-3" >
+                <WeatherIcon code={props.data.icon} />
               </span >
               <span className="temperature" id="temperature">
                 <WeatherTemp celsius={ props.data.temperature} />

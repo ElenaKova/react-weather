@@ -5,8 +5,8 @@
   min-height: 100vh;
 }
 
-.imoji {
-  font-size: 80px;
+.emoji {
+  margin: 0 auto;
 }
 
 :root {
@@ -40,7 +40,7 @@ body {
 
 .container {
   padding: 0 12px;
-  margin: 8px 10px;
+  margin: 0 auto;
 }
 
 .block {
@@ -90,10 +90,6 @@ Button {
 Button.btn {
   display: block;
   border: 2px solid var(--white);
-  /* background-color: var(--white); */
-  /* color: var(--white); */
-  /* background: var(--main-color); */
-  /* color: var(--button-color); */
   padding: 0;
   font-size: 16px;
   border-radius: 5px;
@@ -109,30 +105,23 @@ Button.btn:hover {
   /* opacity: 0.6; */
 }
 
+.CurrentInfo {
+  padding: 1em 0;
+}
+
 h1#city {
-  /* color: var(--main-color); */
-  /* font-size: 60px; */
   font-size: 48px;
   font-weight: 600;
 }
 
 #current-degree {
   font-size: 60px;
-  /* background-color:#6c31ff; */
-  /* border: 2px solid rgb(108, 49, 255, .3); */
-  /* border-radius: 5px; */
 }
 
 .temperature {
   color: rgb(33, 33, 33);
   /* font-size: 58px; */
   font-size: 90px;
-  font-weight: 400;
-  line-height: 1;
-}
-
-.big-emoji-weather {
-  font-size: 64px;
   font-weight: 400;
   line-height: 1;
 }
@@ -146,7 +135,7 @@ h1#city {
 .weather-temperature .units {
   font-size: 15px;
   position: relative;
-  top: -20px;
+  top: -15px;
 }
 
 .weather-temperature a {
@@ -238,7 +227,6 @@ span {
 @media (max-width: 576px) {
   body {
     padding: 2em 1em;
-    margin: 10px 0;
   }
 
   .weather-forecast {
