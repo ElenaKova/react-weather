@@ -23,6 +23,7 @@ export default function SearchEngine(props) {
       icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
       city: response.data.name,
+      feels_like: response.data.main.feels_like
     });
   }
   
