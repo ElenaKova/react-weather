@@ -236,7 +236,7 @@ span {
 }
 
 .item {
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   justify-content: center;
 }
@@ -303,6 +303,10 @@ span {
   .day-of-week {
     margin-right: 0;
   }
+
+  .item {
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -322,9 +326,8 @@ span {
 
   .main {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: start; */
+    /* align-items: start; */
   }
 
   .inner-box-day {
@@ -342,7 +345,7 @@ span {
     display: flex;
     flex-direction: column;
     /* margin-right: 20px; */
-    justify-content: start;
+    /* justify-content: start; */
   }
 
   .weather-forecast-temp {
