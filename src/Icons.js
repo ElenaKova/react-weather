@@ -24,11 +24,15 @@ export default function WeatherIcon(props){
     "50n": "FOG"
   };
 
+  // const sizes = {
+  //   "1": 40,
+  //   "2": 30
+  // }
     return (
       <ReactAnimatedWeather
         icon={iconMatching[props.code]}
         color="#fff"
-        size={38}
+        // size={55}
         animate={true}
       />
     );

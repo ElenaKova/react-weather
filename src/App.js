@@ -1,6 +1,4 @@
 import "./App.css";
-// import Loader from "react-loader-spinner";
-
 import SearchEngine from "./Weather";
 // import Current from "./CurrentMain";
 

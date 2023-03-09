@@ -10,10 +10,8 @@ export default function CurrentInfo(props) {
     <div className="CurrentInfo">
       <div className="container d-flex">
         <div className="container main p-0">
-          <div
-            className="item col-xl-4 col-md-6 d-flex  mb-2"
-            id="current-degree"
-          >
+          <div div className = "item col-xl-3 col-md-6 d-flex justify-content-start"
+            id="current-degree">
             <div className="clearfix weather-temperature">
               <span span className="emoji px-3" >
                 <WeatherIcon code={props.data.icon} />
@@ -32,7 +30,7 @@ export default function CurrentInfo(props) {
               </span>
             </div>
           </div>
-          <div className="item col-xl-4 col-md-3 d-flex mb-2 ">
+          <div div className = "item col-xl-3 col-md-3 d-flex align-items-start" >
             <h1 id="city">{props.data.city}</h1>
             <div className="my-0" id="day-time">
               <FormatDate date={props.data.date} />
@@ -41,7 +39,7 @@ export default function CurrentInfo(props) {
               {props.data.description}
             </div>
           </div>
-          <div className="item col-xl-4 col-md-3 d-flex mb-2 justify-content-end">
+          <div className="item col-xl-3 col-md-3 d-flex justify-content-end align-items-start">
             <div className="my-0 precipitation">
               Feels like: <span id="feels">{Math.round(props.data.feels_like)}</span>℃
             </div>
