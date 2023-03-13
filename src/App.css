@@ -324,11 +324,9 @@ span {
     align-items: center;
   }
 
-  .main {
+  /* .main {
     display: flex;
-    /* justify-content: start; */
-    /* align-items: start; */
-  }
+  } */
 
   .inner-box-day {
     flex-direction: row;

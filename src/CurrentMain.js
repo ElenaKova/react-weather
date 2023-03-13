@@ -20,7 +20,7 @@ export default function CurrentInfo(props) {
       {/* <div className="container d-flex"> */}
         <div className="main">
           <div className = "item col-xl-4 col-md-4 d-flex" id="current-degree">
-            <div className="clearfix  weather-temperature">
+            <div className="clearfix text-align-center weather-temperature">
               <span span className="emoji" >
                 <WeatherIcon code={props.data.icon} />
               </span >

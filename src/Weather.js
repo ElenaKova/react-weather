@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import BlockForecast from "./Forecast";
 import axios from "axios";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import "./App.css";
 
@@ -44,25 +45,26 @@ export default function SearchEngine(props) {
 
   if (weatherData.ready) {
     return (
-      <div div className = "container " >
-        <div form className = "enter-city "
+      <div className = "container" >
+        <div form className = "enter-city"
         id = "enter_city"
-        onSubmit = {
-          handlerSubmit
-        } >
-          <div className = "col d-flex" >
-            {/* <i className="icon fa-solid fa-location-dot fa-lg">icon</i> */}
-            <div className="py-1 d-flex justify-content-start">
+        onSubmit = {handlerSubmit} >
+          <div className = "col d-flex">
+          <div className="py-1 d-flex justify-content-start">
+          {/* <div className="row"> */}
               <div className="py-1 d-flex justify-content-start">
-                <input
+                <FontAwesomeIcon icon = "fa-solid fa-location-dot" size = "6x" />
+                <input 
                   type="search"
                   onChange={updateCity}
                   placeholder="Enter a city.."
                   id="input-city"
-                  autocomplete="off"
-                />
+                  autocomplete="off" 
+                /> 
+                {/* </span> */}
               </div>
-              <div className="py-1 px-2 d-flex justify-content-center align-items-center">
+             
+              <div className=" py-1 px-2 d-flex justify-content-center align-items-center">
                 <Button
                   variant="text"
                   type="submit"
@@ -83,7 +85,8 @@ export default function SearchEngine(props) {
                 </Button>
               </div> */}
             </div>
-          </div>
+            </div>
+            {/* </div> */}
         </div>{" "}
         <CurrentInfo data={weatherData} />
         <BlockForecast coordinates={weatherData.coordinates} />
