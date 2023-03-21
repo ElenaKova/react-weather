@@ -27,15 +27,6 @@ export default function CurrentInfo(props) {
               <span className="temperature" id="temperature">
                 <WeatherTemp celsius={props.data.temperature} />
               </span>
-              <span className="units">
-                <a href="/" id="celsius" className="active">
-                  °C
-                </a>{" "}
-                {/* |
-                <a href="/" id="fahrenheit">
-                  °F
-                </a> */}
-              </span>
             </div>
           </div>
         <div className="item col-xl-8 col-md-8 d-flex justify-content-start
