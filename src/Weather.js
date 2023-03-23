@@ -74,17 +74,17 @@ export default function SearchEngine(props) {
                   Search{" "}
                 </Button>
               </div>
-              <div className="py-1 px-2 d-flex justify-content-center align-items-center">
+              {/* <div className="py-1 px-2 d-flex justify-content-center align-items-center">
                 <Button variant = "text"
                   value = "Search"
                   type = "button"
                   className = "btn py-1 px-2"
                   id="current_city"
-                  // onClick={handleCurrentLocation}
+                  onClick={handleCurrentLocation}
                     >
                     📍
                 </Button>
-              </div>
+              </div> */}
             </div>
             </div>
             {/* </div> */}

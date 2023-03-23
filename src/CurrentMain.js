@@ -19,7 +19,7 @@ export default function CurrentInfo(props) {
         </div>
       {/* <div className="container d-flex"> */}
         <div className="main">
-          <div className = "item col-xl-4 col-md-4 d-flex" id="current-degree">
+          <div className = "item col-lg-4 col-md-6 d-flex" id="current-degree">
             <div className="clearfix text-align-center weather-temperature">
               <span span className="emoji" >
                 <WeatherIcon code={props.data.icon} />
@@ -29,7 +29,7 @@ export default function CurrentInfo(props) {
               </span>
             </div>
           </div>
-        <div className="item col-xl-8 col-md-8 d-flex justify-content-start
+        <div className="item col-lg-8 col-md-6 d-flex justify-content-start
            align-items-start">
             <div className="my-0 precipitation">
               Feels like: <span id="feels">{Math.round(props.data.feels_like)}</span>℃
