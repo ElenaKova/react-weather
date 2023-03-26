@@ -87,13 +87,11 @@ section.inner-box {
   width: 100%;
 }
 
-/* Button {
-  float: left;
-} */
-
 Button.btn {
   display: block;
   border: 2px solid var(--white);
+  background-color: var(--white);
+  color: var(--black);
   padding: 0;
   font-size: 16px;
   border-radius: 5px;
@@ -104,10 +102,13 @@ Button.btn {
 }
 
 Button.btn:hover {
-  background-color: var(--white) !important;
+  background-color: var(--background-main) !important;
   color: var(--black) !important;
   border: 2px solid var(--white) !important;
-  /* opacity: 0.6; */
+}
+
+.btn-text{
+  font-weight: 600;
 }
 
 .CurrentInfo {
@@ -216,7 +217,7 @@ span {
 }
 
 .weather-forecast-temp-min {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .weather-forecast-temp {
