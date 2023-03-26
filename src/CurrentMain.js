@@ -13,7 +13,8 @@ export default function CurrentInfo(props) {
             <div className="my-0" id="day-time">
               <FormatDate date={props.data.date} />
             </div>
-            <div className="my-0" id="description">
+            <div div className = "my-0 description"
+            id = "description" >
               {props.data.description}
             </div>
         </div>
@@ -29,8 +30,7 @@ export default function CurrentInfo(props) {
               </span>
             </div>
           </div>
-        <div className="item description col-lg-8 col-md-6 d-flex justify-content-start
-           align-items-start">
+        <div className="item description col-lg-8 col-md-6 d-flex">
             <div className = "desc px-1 precipitation" >
               Feels like: <span id="feels">{Math.round(props.data.feels_like)}</span>℃
             </div>

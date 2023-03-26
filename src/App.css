@@ -167,31 +167,22 @@ span {
   opacity: 0.7;
 }
 
-#description {
-  opacity: 0.8;
+
+.description {
+  display: flex;
+  justify-content: flex-start;
 }
 
-#description::first-letter {
+.description::first-letter {
   text-transform: capitalize;
 }
 
-.desc{
+.desc {
   color: var(--black);
   background-color: var(--background-child);
   border: none solid var(--background-child);
-  border-radius:5px;
+  border-radius: 5px;
 }
-/* .precipitation {
-  opacity: 0.7;
-}
-
-.humidity {
-  opacity: 0.7;
-}
-
-.wind {
-  opacity: 0.7;
-} */
 
 .border-success {
   --bs-border-opacity: 1;
@@ -237,7 +228,7 @@ span {
 .item {
   align-items: start;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .icon-forecast {
@@ -305,8 +296,6 @@ span {
   .day-of-week {
     display: flex;
     flex-direction: column;
-    /* margin-right: 20px; */
-    /* justify-content: start; */
   }
 
   .weather-forecast-temp {
@@ -340,6 +329,10 @@ span {
 
   .weather-forecast {
     flex-wrap: wrap;
+  }
+
+  .description {
+    justify-content: center;
   }
 
   .main {
@@ -380,6 +373,7 @@ span {
 
   .description {
     padding: 5px 0 0 0;
+
   }
 
   .box-day {
