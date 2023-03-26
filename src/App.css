@@ -2,7 +2,7 @@
   font-family: sans-serif;
   color: var(--button-color);
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .emoji {
@@ -29,12 +29,11 @@ body {
   /* background: linear-gradient(120deg, #ffb76f9c, #5f0bfc88); */
   color: var(--button-color);
   width: 100%;
-  min-height: 100vh;
 }
 
 section.inner-box {
   background-color: var(--background-forecast);
-  margin: 1em 0;
+  margin: 1em 0 ;
 }
 
 .inner-box-day {
@@ -47,12 +46,12 @@ section.inner-box {
 .main {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .container {
-  padding: 1 4em !important;
-  margin: 0 auto;
+  padding: 1.5em!important;
+  /* margin: 0 auto; */
 }
 
 .block {
@@ -60,16 +59,22 @@ section.inner-box {
   flex-wrap: wrap;
   flex-direction: column;
   /* border: 3px solid #9dbeff; */
-  padding: 2em;
+  /* padding: 2em; */
   box-shadow: 5px 5px 15px 1px var(--light-black);
   /* background: linear-gradient(120deg, #ffb76f9c, #5f0bfc88); */
   background: var(--background-main);
   justify-content: space-around;
 }
 
-.enter-city {
+/* .enter-city {
   position: relative;
   display: flex;
+} */
+
+.form-city {
+  display: flex;
+  flex-wrap: wrap;
+  flex: start;
 }
 
 .weather-temperature {
@@ -108,6 +113,7 @@ Button.btn {
   transition: all 200ms ease-in-out;
   box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
   cursor: pointer;
+  margin: 3px 6px;
 }
 
 Button.btn:hover {
@@ -211,7 +217,7 @@ span {
   color: var(--black);
   width: 100% !important;
   justify-content: center;
-  margin: 2em 0;
+  margin: 5px 0;
 }
 
 .day-of-week {
@@ -252,6 +258,82 @@ span {
 
   height: 55px;
   width: 55px;
+}
+
+
+
+@media (max-width: 1200px) {
+  body {
+    padding: 2em 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    padding: 5em 15em;
+  }
+}
+
+@media (min-width: 992px) {
+  .box-day {
+    margin: 0.5em 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .container {
+    margin: 0 auto;
+  } */
+
+  /* .block {
+    padding: 1em;
+  } */
+
+  Button.btn {
+    margin: 3px 6px;
+  }
+
+  .weather-forecast {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .inner-box-day {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.4em 0;
+  }
+
+  .box-day {
+    margin: 1px 0;
+  }
+
+  .day-of-week {
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 20px; */
+    /* justify-content: start; */
+  }
+
+  .weather-forecast-temp {
+    font-size: 16px;
+    flex-direction: row;
+
+  }
+
+  .weather-forecast-temp-min {
+    margin-left: 5px;
+  }
+
+  .icon-forecast {
+    margin: 0 20px;
+  }
+
+  .icon-forecast canvas {
+    height: 45px;
+    width: 45px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -295,6 +377,14 @@ span {
     width: 55px;
   }
 
+  .weather-temperature .units {
+    font-size: 15px;
+  }
+
+  .description {
+    padding: 5px 0 0 0;
+  }
+
   .box-day {
     margin: 1px 0;
     padding: 0;
@@ -307,81 +397,18 @@ span {
   .item {
     align-items: center;
   }
-}
 
-@media (max-width: 768px) {
-  .container {
-    margin: 0 auto;
-
-  }
-
-  .block {
-    padding: 1em;
-  }
-
-  .weather-forecast {
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  /* .main {
+  .form-city {
     display: flex;
-  } */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  Button.btn {
+    margin: 3px 0;
+  }
 
   .inner-box-day {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0.4em 0;
-  }
-
-  .box-day {
-    margin: 1px 0;
-  }
-
-  .day-of-week {
-    display: flex;
     flex-direction: column;
-    /* margin-right: 20px; */
-    /* justify-content: start; */
-  }
-
-  .weather-forecast-temp {
-    font-size: 16px;
-    flex-direction: row;
-
-  }
-
-  .weather-forecast-temp-min {
-    margin-left: 5px;
-  }
-
-  .icon-forecast {
-    margin: 0 20px;
-  }
-
-  .icon-forecast canvas {
-    height: 45px;
-    width: 45px;
-  }
-
-
-}
-
-@media (min-width: 992px) {
-  .box-day {
-    margin: 0.5em 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  body {
-    padding: 5em 15em;
-  }
-}
-
-@media (max-width: 1200px) {
-  body {
-    padding: 2em 2em;
   }
 }

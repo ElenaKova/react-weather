@@ -8,16 +8,22 @@ export default function App() {
       <div className="block">
         <SearchEngine defaultCity="Rome" />
       </div>
+      
       <footer>
-          This project was coded by Elena Kovalenko and is{" "}
+        <div>
+          <p className="pt-3"> This project was coded by Elena Kovalenko and is {
+            " "
+          }
           <a
             href = "https://github.com/ElenaKova/react-weather"
             target="_blank"
             rel="noreferrer"
           >
             open-sourced on GitHub
-          </a>
-        </footer>
+            </a>
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }

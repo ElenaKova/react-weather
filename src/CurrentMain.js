@@ -29,7 +29,7 @@ export default function CurrentInfo(props) {
               </span>
             </div>
           </div>
-        <div className="item col-lg-8 col-md-6 d-flex justify-content-start
+        <div className="item description col-lg-8 col-md-6 d-flex justify-content-start
            align-items-start">
             <div className="my-0 precipitation">
               Feels like: <span id="feels">{Math.round(props.data.feels_like)}</span>℃

@@ -31,7 +31,7 @@ export default function ShowForecast(props) {
 
     return (
         <div className="box-day" >
-            <div className="container inner-box-day text-align-center d-flex">
+            <div className="inner-box-day text-align-center d-flex">
                 <div className="day-of-week"> {day()}
                 </div>
                 <div className="icon-forecast">

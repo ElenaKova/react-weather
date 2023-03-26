@@ -30,7 +30,7 @@ export default function BlockForecast(props) {
         return (           
                 <section className="inner-box">
                 <div class="box-day" >
-                    <div class = "container inner-box-day d-flex" >
+                    <div class = "inner-box-day d-flex" >
                         <div class="day-of-week align-items-center ">
                             {forecast.map(function (daily, idx) {
                                 if (idx < 6) {

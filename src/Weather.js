@@ -49,12 +49,9 @@ export default function SearchEngine(props) {
     return (
       <div className = "container" >
         <form className = "enter-city"
-          id = "enter_city"
           onSubmit = {handlerSubmit} >
-            <div className = "col d-flex">
-            <div className="py-1 d-flex justify-content-start">
-          {/* <div className="row"> */}
-              <div className="py-1 d-flex justify-content-start">
+            <div className = "form-city col py-1 d-flex" >
+              <div className="py-1 d-flex">
                 <FontAwesomeIcon icon = "fa-solid fa-location-dot" size = "6x" />
                 <input 
                   type="search"
@@ -64,12 +61,12 @@ export default function SearchEngine(props) {
                   autocomplete="off" 
                 /> 
               </div>
-              <div className=" py-1 px-2 d-flex justify-content-center align-items-center">
+              <div className="d-flex justify-content-center align-items-center">
                 <Button
                   variant="text"
                   type="submit"
                   value="Search"
-                  className="btn py-1 px-2"
+                  className = "btn py-1 px-1"
                 >
                   Search{" "}
                 </Button>
@@ -86,12 +83,10 @@ export default function SearchEngine(props) {
                 </Button>
               </div> */}
             </div>
-            </div>
-            {/* </div> */}
         </form>{" "}
         <CurrentInfo data={weatherData} />
         <BlockForecast coordinates={weatherData.coordinates} />
-      </div>
+        </div>
     );
   } else {
     search();
