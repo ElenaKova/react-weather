@@ -1,6 +1,6 @@
-![view_laptop](https://user-images.githubusercontent.com/27889651/227783945-51d665ce-9287-473b-b8e3-c5cd34e87624.png)
+![view_laptop](https://user-images.githubusercontent.com/27889651/227803864-a3b3face-91a5-42d9-aa07-fb7149fda4ba.png)
 
-![view_mobile](https://user-images.githubusercontent.com/27889651/227783947-479290c4-8649-4dea-ac98-e626acf9abdf.png)
+![view_mobile](https://user-images.githubusercontent.com/27889651/227803870-3639321f-fec8-4c98-bb9d-3d386477f75e.png)
 
 
 
