@@ -57,7 +57,7 @@ export default function SearchEngine(props) {
                   type="search"
                   onChange={updateCity}
                   placeholder="Enter a city.."
-                  id="input-city"
+                  className="input-city"
                   autocomplete="off" 
                 /> 
               </div>

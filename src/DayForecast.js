@@ -20,7 +20,7 @@ export default function ShowForecast(props) {
         let day = date.getDay();
         let days = ["Sun",
             "Mon",
-            "Tue",
+            "Tue ",
             "Wed",
             "Thu",
             "Fri",

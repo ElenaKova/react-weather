@@ -2,7 +2,6 @@
   font-family: sans-serif;
   color: var(--button-color);
   width: 100%;
-  /* min-height: 100vh; */
 }
 
 .emoji {
@@ -15,25 +14,21 @@
 }
 
 :root {
-  --main-color: #6c31ff;
-  --background-main: #fcca979c;
-  --background-forecast: #fcc997;
-  --white: #fff;
-  --border-box: rgb(108, 49, 255, 0.3);
-  --black: rgb(33, 33, 33);
-  --light-black: rgba(33, 33, 33, 0.677);
+  --background-main: rgb(100, 149, 237);
+  --background-child: rgba(214, 234, 248, 0.5);
+  --white: rgb(253, 254, 254, 0.7);
+  --black: rgb(40, 55, 71);
 }
 
 body {
   font-family: "Segoe UI";
-  /* background: linear-gradient(120deg, #ffb76f9c, #5f0bfc88); */
   color: var(--button-color);
   width: 100%;
 }
 
 section.inner-box {
-  background-color: var(--background-forecast);
-  margin: 1em 0 ;
+  background-color: var(--background-child);
+  margin: 1em 0;
 }
 
 .inner-box-day {
@@ -50,26 +45,18 @@ section.inner-box {
 }
 
 .container {
-  padding: 1.5em!important;
-  /* margin: 0 auto; */
+  padding: 1.5em !important;
 }
 
 .block {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  /* border: 3px solid #9dbeff; */
-  /* padding: 2em; */
   box-shadow: 5px 5px 15px 1px var(--light-black);
-  /* background: linear-gradient(120deg, #ffb76f9c, #5f0bfc88); */
   background: var(--background-main);
   justify-content: space-around;
 }
 
-/* .enter-city {
-  position: relative;
-  display: flex;
-} */
 
 .form-city {
   display: flex;
@@ -100,9 +87,9 @@ section.inner-box {
   width: 100%;
 }
 
-Button {
+/* Button {
   float: left;
-}
+} */
 
 Button.btn {
   display: block;
@@ -119,7 +106,7 @@ Button.btn {
 Button.btn:hover {
   background-color: var(--white) !important;
   color: var(--black) !important;
-  /* border: 2px solid var(--main-color) !important; */
+  border: 2px solid var(--white) !important;
   /* opacity: 0.6; */
 }
 
@@ -158,7 +145,7 @@ h1#city {
 
 .weather-temperature a {
   text-decoration: none;
-  color: var(--main-color);
+  color: var(--white);
 }
 
 .weather-temperature .active {
@@ -181,14 +168,20 @@ span {
 }
 
 #description {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 #description::first-letter {
   text-transform: capitalize;
 }
 
-.precipitation {
+.desc{
+  color: var(--black);
+  background-color: var(--background-child);
+  border: none solid var(--background-child);
+  border-radius:5px;
+}
+/* .precipitation {
   opacity: 0.7;
 }
 
@@ -198,7 +191,7 @@ span {
 
 .wind {
   opacity: 0.7;
-}
+} */
 
 .border-success {
   --bs-border-opacity: 1;
@@ -207,7 +200,7 @@ span {
 
 .weather-forecast {
   display: flex;
-  background-color: var(--background-forecast);
+  background-color: var(--background-child);
   /* border-radius: 5px; */
   padding: 1em 0;
 }
@@ -341,6 +334,10 @@ span {
     padding: 2em 1em;
   }
 
+  Button.btn {
+    margin: 3px 6px;
+  }
+
   .weather-forecast {
     flex-wrap: wrap;
   }
@@ -402,10 +399,6 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  Button.btn {
-    margin: 3px 0;
   }
 
   .inner-box-day {
