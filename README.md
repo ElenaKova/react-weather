@@ -1,7 +1,5 @@
 
 ![react-weather-app-2023 netlify app_ (1)](https://user-images.githubusercontent.com/27889651/229304793-78c6ae98-5f11-4215-8778-7eb059af2c91.png)
-
-
 ![react-weather-app-2023 netlify app_ (2)](https://user-images.githubusercontent.com/27889651/229304736-2f1f2ff5-2d35-45fa-ac8f-3ecf48f4bec9.png)
 
 
