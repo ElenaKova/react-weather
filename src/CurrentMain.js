@@ -18,7 +18,7 @@ export default function CurrentInfo(props) {
               {props.data.description}
             </div>
         </div>
-      {/* <div className="container d-flex"> */}
+        
         <div className="main">
           <div className = "item col-lg-4 col-md-6 d-flex" id="current-degree">
             <div className="clearfix text-align-center weather-temperature">
@@ -43,6 +43,5 @@ export default function CurrentInfo(props) {
           </div>
         </div>
       </div>
-    // </div>
   );
 }

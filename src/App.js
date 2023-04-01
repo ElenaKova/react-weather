@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="block">
-        <SearchEngine defaultCity="Rome" />
+        <SearchEngine defaultCity="Kyiv" />
       </div>
       
       <footer>
