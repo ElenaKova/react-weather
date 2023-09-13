@@ -1,6 +1,6 @@
-
-![react-weather-app-2023 netlify app_ (1)](https://user-images.githubusercontent.com/27889651/229304793-78c6ae98-5f11-4215-8778-7eb059af2c91.png)
-![react-weather-app-2023 netlify app_ (2)](https://user-images.githubusercontent.com/27889651/229304736-2f1f2ff5-2d35-45fa-ac8f-3ecf48f4bec9.png)
+![view_laptop](https://user-images.githubusercontent.com/27889651/231184364-7f6e82b9-f3cd-47c7-9117-06e95880584d.png)
+![md-screen](https://user-images.githubusercontent.com/27889651/231184393-1063e79e-a86e-43e3-949f-bb0894e5e183.png)
+![view_mobile](https://user-images.githubusercontent.com/27889651/231184409-cbcdcb5a-2502-4445-b89c-bc71695fcb65.png)
 
 
 # Getting Started with Create React App
