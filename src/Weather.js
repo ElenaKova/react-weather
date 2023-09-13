@@ -66,7 +66,7 @@ export default function SearchEngine(props) {
                   variant="text"
                   type="submit"
                   value="Search"
-                  className = "btn py-1 px-1"
+                  className = "btn"
                 >
                   Search{" "}
                 </Button>

@@ -32,13 +32,15 @@ export default function CurrentInfo(props) {
           </div>
         <div className="item description col-lg-8 col-md-6 d-flex">
             <div className = "desc px-1 precipitation" >
-              Feels like: <span id="feels">{Math.round(props.data.feels_like)}</span>℃
+              Feels like: <span id = "feels detail"> {
+                Math.round(props.data.feels_like)
+              }</span>°C
             </div>
             <div className = "mt-1 px-1 desc humidity" >
-              Humidity: <span id="humidity">{props.data.humidity}</span>%
+              Humidity: <span id="humidity detail">{props.data.humidity} </span>%
             </div>
             <div className = "mt-1 px-1 desc wind" >
-              Wind: <span id="wind">{Math.round(props.data.wind)}</span> km/h
+              Wind: <span id="wind detail">{Math.round(props.data.wind)}</span> km/h
             </div>
           </div>
         </div>
