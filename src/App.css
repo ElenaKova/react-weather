@@ -13,29 +13,62 @@
   font-size: 14px;
 }
 
-Button.btn:active {
-  color: #666;
-  box-shadow: inset 4px 4px 12px var(--background-child),
-    inset -4px -4px 12px var(--background-child);
-  border: none;
+Button.btn {
+    background: var(--background-child);
+  font-size: 20px;
+  color: var(--black);
+  border-radius: 25px;
+  box-shadow: 0 7px 0px #387796;
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+  margin: 0 8px;
+  padding: 8px 16px;
+ font-size: 16px;
+  position: relative;
+  top: 0;
+  /* cursor: pointer; */
+  /* margin: 0 20px; */
 }
 
-Button.btn {
+Button.btn:active {
+  top: 3px;
+  box-shadow: 0 1px 0px #387796;
+  transition: all .2s;
+}
+
+
+
+/* Button.btn {
   display: block;
   font-weight: 500;
   cursor: pointer;
   color: var(--black);
-  /* padding: 0.7em 1.7em; */
+  padding: 0.7em 1.7em;
   font-size: 16px;
   transition: all 200ms ease-in-out;
   border-radius: 24px;
   background: var(--background-child);
-  border: none solid var(--background-child);
+  border: 1px solid var(--background-child);
   transition: all .3s;
-  /* box-shadow: 1px 1px 5px var(--black),
-    -1px -1px 5px var(--black); */
+  box-shadow: 1px 1px 5px var(--black),
+    -1px -1px 5px var(--black);
   margin: 0 8px;
   padding: 8px 16px;
+} */
+
+ Button.btn:hover {
+  color: var(--background-child);
+  /* box-shadow: inset 4px 4px 12px var(--background-child); */
+  border: solid 2px var(--background-child);
+}
+
+
+Button.btn:active {
+  /* color: var(--background-child); */
+  /* box-shadow: inset 4px 4px 12px var(--background-child); */
+  /* border: none; */
+  border: solid 2px var(--background-child);
 }
 
 .App {
